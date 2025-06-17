@@ -9,7 +9,7 @@ GOOGLE_KEY = os.getenv("GOOGLE_API_KEY")
 
 client = AsyncOpenAI(
     api_key=GOOGLE_KEY,
-    base_url=""
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/ "
 )
 
 agent = Agent(
