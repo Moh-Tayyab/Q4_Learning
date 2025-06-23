@@ -17,9 +17,7 @@ def main():
     agent = Agent(
         name = 'Assistant',
         instructions = "You are expert agent",
-        model = OpenAIChatCompletionsModel(
-            model = 'gemini-2.0-flash',
-            openai_client = client,
+        model = OpenAIChatCompletionsModel(model = 'gemini-2.0-flash', openai_client = client,
             )
     )
     
